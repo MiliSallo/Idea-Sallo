@@ -101,9 +101,16 @@ padding: 0.1rem;
     height: auto;
 }
 
+.section__imagenes img:hover{
+    transform: scale(1.1);
+}
+
 .section__imagenes{
     margin: 2.5rem;
 }
+/*-----------------INDEX-----------*/
+
+
 
     /*------------------CONTACTO-------------------*/
     #grilla__contacto{
@@ -133,6 +140,8 @@ padding: 0.1rem;
     
 
     /*-------------------NOSOTROS----------------------*/
+
+
 
     #grilla__nosotros{
         display: grid;
