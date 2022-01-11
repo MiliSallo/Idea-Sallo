@@ -10,34 +10,53 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="./css-bt/bootstrap.min.css">
 </head>
 
 <body>
 
-<div id="grilla__index">    
-<header class="header">
-    <div class="contenedor__header">
 
-    <div class="header__logo">
-<a href="index.html">
-<img src="./img/logo.jpg" alt="logo El Naranjo">
-</a>
-</div>
-
-<div>
-<nav class="header__navbar">
-    <ul class="header__navbar--principal">
-        <li class="navbar__categoria"><a href="tienda.html">Tienda </a></li>
-        <li  class="navbar__categoria"><a href="nosotros.html">Nosotros </a></li>
-        <li  class="navbar__categoria"><a href="turnos.html">Turnos </a></li>
-        <li  class="navbar__categoria"><a href="contacto.html">contacto </a></li>
-    </ul>
-</nav>
-</div>
-
-</div>
-
+    <header>
+    <nav class="navbar navbar-expand-lg bg-naranja">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/logo.jpg" alt="" width="100" height="auto">
+              </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-links active" aria-current="page" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="turnos.html">Turnos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-links dropdown-toggle" href="tienda.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tienda
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="tienda.html">Perros</a></li>
+                  <li><a class="dropdown-item" href="tienda.html">Gatos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"> Accesorios</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-links" href="contacto.html"> Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="¿Qué estas buscando?" aria-label="Search">
+              <button class= "btn-busqueda" type="submit"> Búsqueda</button>
+            </form>
+          </div>
+        </div>
+      </nav>
 </header>
+
 
 <section class="section__contenido">
     <h4 class="section__titulo titulo--index">¡Últimas ofertas!</h4>
@@ -49,7 +68,6 @@
 
 <div class="section__imagenes">
 <img src="img/alimento-en-venta-dos.jpg" alt="paquete de alimento para mascotas">
-</div>
 </div>
 
 
@@ -82,7 +100,7 @@
 
 </div>
 
-
-    
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="./js-bt/bootstrap.min.js"></script>  
 </body>
 </html>

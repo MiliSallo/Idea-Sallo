@@ -29,7 +29,52 @@ footer{
     grid-area: footer;
 }
 
-/*--------------HEADER------------*/
+/*----------HEADER----------*/
+.bg-naranja{
+    background-color: #fb8500;
+}
+
+.btn-busqueda {
+    border-color: #219ebc;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: #219ebc;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s
+    }
+
+    .btn-busqueda:hover {
+        color:#219ebc ;
+        background-color: white;
+        border-color: white;
+}
+
+.nav-links {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-links:hover{
+    background-color: white;
+    color: #219ebc;
+    border-color: white;
+}
+/*--------------HEADER------------
 .header{
     background-color: #fb8500;
     }
@@ -53,7 +98,7 @@ footer{
 }
 
 
-/*---------------NAVBAR--------------*/
+---------------NAVBAR--------------
 .header__navbar ul{
 padding: 1rem;
 list-style-type: none;
@@ -70,6 +115,7 @@ padding: 0.1rem;
 
 }
 
+
 .header__navbar a {
     text-decoration: none;
     text-transform: uppercase;
@@ -79,6 +125,7 @@ padding: 0.1rem;
     background-color: #219ebc;
     padding: 0.7rem;
     }
+    */
 
 
     /*-----------------CONTENIDO-----------*/
@@ -118,30 +165,14 @@ padding: 0.1rem;
 }
 
     /*------------------CONTACTO-------------------*/
-    #grilla__contacto{
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "section section section"
-        "footer footer footer"; 
-    }
-    .header{
-        grid-area: header;
-    }
-    .section__contacto{
-        grid-area: section;
-    }
-    .footer{
-        grid-area: footer;
+.section__formulario{
+        margin: 2rem;
     }
 
-
-    .section__formulario{
-    background-color : #219ebc;
-    margin: 2rem;
+    .contacto__texto{
+        padding-top: 1rem;
+        margin-left: 1rem;
     }
-
-
     
 
     /*-------------------NOSOTROS----------------------*/
@@ -312,9 +343,9 @@ padding: 0.1rem;
         flex-direction: row;
     }
 
-.contacto__texto{
+/*.contacto__texto{
     margin-top: 1rem;
-    padding-left: 2rem;
+    padding-left: 2rem;*/
 }
 
 .tienda__titulo h4{
@@ -346,4 +377,3 @@ padding: 0.1rem;
     .contenedorFooter{
         justify-content: space-evenly;
     }
-}
