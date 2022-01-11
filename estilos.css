@@ -109,8 +109,13 @@ padding: 0.1rem;
     margin: 2.5rem;
 }
 /*-----------------INDEX-----------*/
-
-
+.titulo--index {
+    transition: background-color .5s;
+}
+.titulo--index:hover{
+    background-color: black;
+    color: white;
+}
 
     /*------------------CONTACTO-------------------*/
     #grilla__contacto{
@@ -198,9 +203,16 @@ padding: 0.1rem;
 /*------------------TURNOS----------------*/
 .turnos__titulo h4{
     font-size: 1rem;
-
+    color: black;
 }
 
+.turnos--titulo {
+    transition: background-color .5s;
+}
+.turnos--titulo:hover{
+    background-color: black;
+    color: white;
+}
 
 
     /*------------------------FOOTER---------------*/
