@@ -34,6 +34,8 @@ footer{
     background-color: #fb8500;
 }
 
+/*-----------NAVBAR------------*/
+
 .btn-busqueda {
     border-color: #219ebc;
     display: inline-block;
@@ -74,61 +76,8 @@ footer{
     color: #219ebc;
     border-color: white;
 }
-/*--------------HEADER------------
-.header{
-    background-color: #fb8500;
-    }
 
-.header__logo img{
-    
-    width: 100%;
-    height: auto;
-}
-
-.header__logo{
-    width: 7rem;
-    padding: 0.rem;
-}
-.contenedor__header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-
-}
-
-
----------------NAVBAR--------------
-.header__navbar ul{
-padding: 1rem;
-list-style-type: none;
-}
-
-.header__navbar li{
-    display: inline-block;
-}
-
-.navbar__categoria{
-margin-top: 0.5rem;
-margin-bottom: 1rem;
-padding: 0.1rem;
-
-}
-
-
-.header__navbar a {
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-size: 0.6rem;
-    background-color: #219ebc;
-    padding: 0.7rem;
-    }
-    */
-
-
-    /*-----------------CONTENIDO-----------*/
+/*-----------------CONTENIDO-----------*/
 
     .contenedorFlex{
         display: flex; 
@@ -154,6 +103,7 @@ padding: 0.1rem;
 
 .section__imagenes{
     margin: 2.5rem;
+    
 }
 /*-----------------INDEX-----------*/
 .titulo--index {
@@ -167,6 +117,7 @@ padding: 0.1rem;
     /*------------------CONTACTO-------------------*/
 .section__formulario{
         margin: 2rem;
+        background-color: #219ebc;
     }
 
     .contacto__texto{
@@ -213,8 +164,12 @@ padding: 0.1rem;
 
 .section__descripcion{
     background-color: #219ebc;
+    padding-top: 2rem;
 
-    
+    }
+
+.img--frentevete{
+    padding-left: 19rem;
 }
 
 /*-----------------------TIENDA-----------------------*/
@@ -247,11 +202,11 @@ padding: 0.1rem;
 
 
     /*------------------------FOOTER---------------*/
-    .footer{
+.footer{
         background-color:#fb8500 ; 
         color: white;
-        font-size: 1rem;
-        padding: 1rem;
+        
+        
     }
 .footer h3{
     color: white;
@@ -260,25 +215,25 @@ padding: 0.1rem;
     margin-left: 1rem;
     
 }
-.contenedorFooter{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-}
-.footer__menu{
-    color: black;
-    list-style-type: none;
-
-    
-}
-.footer__menu a{
-    color:black;
+.footer--tamaño{
+    font-size: 0.9rem;
 }
 
-.footer__redes{
-    margin-top: 2rem;
+.footer__pie{
+    display: none;
 }
+.nav-links--footer{
+    color: white;
+}
+
+.nav-links--footer:hover{
+    background-color: white;
+    color: #219ebc;
+    border-color: white;
+}
+
+
 
 
 /*TABLETAS*/
@@ -343,11 +298,6 @@ padding: 0.1rem;
         flex-direction: row;
     }
 
-/*.contacto__texto{
-    margin-top: 1rem;
-    padding-left: 2rem;*/
-}
-
 .tienda__titulo h4{
     font-size: 2rem;
 
@@ -366,14 +316,13 @@ padding: 0.1rem;
 
 
     
-    .footer h3{
-        font-size: 1.5rem;
-        margin-left: 14rem;
-    }
+
 
     .footer{
         font-size: 1.5rem;
-    } 
+    }
+    
     .contenedorFooter{
         justify-content: space-evenly;
     }
+}
