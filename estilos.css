@@ -168,9 +168,24 @@ footer{
 
     }
 
-.img--frentevete{
-    padding-left: 19rem;
+.container__carousel{
+    padding-top: 2rem;
 }
+
+.img__carousel{
+    padding-left: 6.5rem;
+}
+.carousel-captions {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: black;
+    text-align: center;
+}
+
 
 /*-----------------------TIENDA-----------------------*/
 .tienda__titulo h4{
@@ -274,6 +289,9 @@ footer{
     justify-content: space-around;
 } 
 
+.img__carousel{
+    padding-left: 11rem;
+}
 .footer__redes{
     margin-bottom: 2rem;
 }
@@ -314,7 +332,9 @@ footer{
 
 }
 
-
+.img__carousel{
+    padding-left: 15rem;
+}
     
 
 
