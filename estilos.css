@@ -77,6 +77,7 @@ footer{
     border-color: white;
 }
 
+
 /*-----------------CONTENIDO-----------*/
 
     .contenedorFlex{
@@ -116,13 +117,20 @@ footer{
 
     /*------------------CONTACTO-------------------*/
 .section__formulario{
-        margin: 2rem;
-        background-color: #219ebc;
-    }
-
+        margin-bottom: 1rem;
+    }   
+    
     .contacto__texto{
         padding-top: 1rem;
         margin-left: 1rem;
+    }
+    
+    .formInput{
+        border: 1px solid #ced4da;
+    }
+    
+    .formInput:hover{
+        border-color: black;
     }
     
 
@@ -190,15 +198,54 @@ footer{
 /*-----------------------TIENDA-----------------------*/
 .tienda__titulo h4{
     font-size: 1rem;
+    color: black;
 }
 
 
+.tienda__titulo {
+    transition: background-color .5s;
+}
+.tienda__titulo:hover{
+    background-color: black;
+    color: white;
+}
 
 .contenedor__tienda{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "fotoUno"
+    "fotoDos"
+    "fotoTres"
+    "fotoCuatro"
+    "fotoCinco"
+    "fotoSeis";
+
+}
+
+.imgTiendaUno{
+    grid-area: fotoUno;
+}
+
+.imgTiendaDos{
+    grid-area:  fotoDos;
+}
+
+.imgTiendaTres{
+    grid-area: fotoTres;
+}
+
+.imgTiendaCuatro{
+    grid-area: fotoCuatro;
+}
+
+.imgTiendaCinco{
+    grid-area: fotoCinco;
+}
+
+.imgTiendaSeis{
+    grid-area: fotoSeis;
 }
 
 /*------------------TURNOS----------------*/
@@ -214,6 +261,15 @@ footer{
     background-color: black;
     color: white;
 }
+
+.contenedorTurnos{
+    margin-bottom: 2rem;
+}
+
+.turnosLabel{
+    text-transform: uppercase;
+}
+
 
 
     /*------------------------FOOTER---------------*/
@@ -322,9 +378,43 @@ footer{
 }
 
 
-.contenedor__tienda{
+/*.contenedor__tienda{
     flex-wrap: nowrap;
     align-items: flex-start;
+}*/
+.contenedor__tienda{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "fotoUno fotoDos fotoTres"
+    "fotoCuatro fotoCinco fotoSeis";
+    align-items: start;
+
+}
+
+.imgTiendaUno{
+    grid-area: fotoUno;
+}
+
+.imgTiendaDos{
+    grid-area:  fotoDos;
+}
+
+.imgTiendaTres{
+    grid-area: fotoTres;
+}
+
+.imgTiendaCuatro{
+    grid-area: fotoCuatro;
+}
+
+.imgTiendaCinco{
+    grid-area: fotoCinco;
+}
+
+.imgTiendaSeis{
+    grid-area: fotoSeis;
 }
 
 .turnos__titulo h4{
