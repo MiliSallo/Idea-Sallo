@@ -62,12 +62,14 @@
         <div class="turnos__titulo">
         <h4 class="turnos--titulo">Sacá tu turno por aquí</h4>
     </div>
+    
 <div class="contenedorTurnos container-fluid">
+  <form action="">
     <div class="row mb-3">              
       <label class="col-sm-2 col-form-label turnosLabel" for="pais">Selecciona el servicio</label>
       </div>
       <div class="col-sm-10">
-      <select class= "form-select formInput" name="servicio" id="servicio">
+      <select class= "form-select formInput" name="servicio" id="servicio" required>
       <option value="consultorio"> Consultorio</option>
       <option value="peluqueria"> Peluquería</option>
       <option value="ecografia"> Ecografía</option>
@@ -89,6 +91,11 @@
       <input  class="form-control formInput" type="time" name="hora" id="hora"  required>
   </div>
 </div>
+<div class="contenedorBtn container-fluid">
+<button class= "btn-turnos" type="submit"> Solicitar turno</button>
+</div>
+
+</form>
     </section>
 
 
