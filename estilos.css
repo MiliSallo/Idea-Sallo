@@ -80,7 +80,7 @@ footer{
 
 /*-----------------CONTENIDO-----------*/
 
-    .contenedorFlex{
+.contenedorFlex{
         display: flex; 
         flex-direction: column;
         }
@@ -138,14 +138,12 @@ footer{
 
 
 
-    #grilla__nosotros{
+#grilla__nosotros{
         display: grid;
         grid-template-areas: 
         "header header header"
         "section section section"
         "footer footer footer"; 
-
-
 }
 
 .header{
@@ -268,6 +266,7 @@ footer{
 
 .turnosLabel{
     text-transform: uppercase;
+
 }
 
 .btn-turnos {
@@ -408,10 +407,7 @@ footer{
 }
 
 
-/*.contenedor__tienda{
-    flex-wrap: nowrap;
-    align-items: flex-start;
-}*/
+
 .contenedor__tienda{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
