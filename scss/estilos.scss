@@ -3,9 +3,19 @@ $color-naranja: #fb8500;
 $color-celeste: #219ebc;
 $font: 'Roboto','sans-serfif';
 
+/*----------------MAPAS----------*/
+$colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
+;
+
+/*-----------MIXIN CON PARÁMETROS--------------*/
+@mixin estiloDeFuente ($size, $alineacion){
+    font-size: $size;
+    text-align: $alineacion;
+}
+
 /*----------HEADER------------------*/
 .bg-naranja{
-    background-color: $color-naranja;
+    background-color: map-get($colores, colorNaranja )
 }
 
 @import "navbar";
@@ -20,10 +30,9 @@ $font: 'Roboto','sans-serfif';
     .section__contenido{
 
         h4{
+        @include estiloDeFuente(1.5rem, center );
         color: black;
-        text-align: center;
         text-transform: uppercase;
-        font-size: 1.5rem;
         padding: 2rem;
     }
     }
@@ -109,11 +118,7 @@ $font: 'Roboto','sans-serfif';
 
     /*-----------------------TIENDA-----------------------*/
 .tienda__titulo{
-    transition: background-color .5s;
-    &:hover{
-        background-color: black;
-        color: white;
-    }
+    @extend .titulo--index;
     h4{
     font-size: 1rem;
     color: black;
@@ -161,17 +166,13 @@ $font: 'Roboto','sans-serfif';
 /*------------------TURNOS----------------*/
 .turnos__titulo {
     h4{
-    font-size: 1rem;
-    color: black;
+        @include estiloDeFuente(1.5rem, center );
+        color: black;
 }
 }
 
 .turnos--titulo {
-    transition: background-color .5s;
-    &:hover{
-        background-color: black;
-        color: white;
-    }
+    @extend .titulo--index;
 }
 
 .contenedorTurnos{
@@ -198,7 +199,7 @@ $font: 'Roboto','sans-serfif';
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
-        background-color: #219ebc;
+        background-color: $color-celeste;
         padding: 0.375rem 0.75rem;
         font-size: 1rem;
         border-radius: 0.25rem;
@@ -212,6 +213,7 @@ $font: 'Roboto','sans-serfif';
         }
 }
 
+@import "footer";
 /*TABLETAS*/
 @media (min-width: 768px){
     .header__logo{

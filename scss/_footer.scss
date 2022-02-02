@@ -1,6 +1,6 @@
 /*------------------------FOOTER---------------*/
 .footer{
-    background-color:$color-naranja ; 
+    background-color: map-get($colores, colorNaranja ); 
     color: white;
     h3{
         color: white;
