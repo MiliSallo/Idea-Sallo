@@ -29,7 +29,7 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 
     .section__contenido{
 
-        h4{
+        h3{
         @include estiloDeFuente(1.5rem, center );
         color: black;
         text-transform: uppercase;
@@ -119,7 +119,7 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
     /*-----------------------TIENDA-----------------------*/
 .tienda__titulo{
     @extend .titulo--index;
-    h4{
+    h3{
     font-size: 1rem;
     color: black;
 }
@@ -165,7 +165,7 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 
 /*------------------TURNOS----------------*/
 .turnos__titulo {
-    h4{
+    h3{
         @include estiloDeFuente(1.5rem, center );
         color: black;
 }
@@ -214,6 +214,7 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 }
 
 @import "footer";
+
 /*TABLETAS*/
 @media (min-width: 768px){
     .header__logo{
@@ -269,7 +270,7 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 
     .section__contenido{
 
-    h4{
+    h3{
         font-size: 1.7rem;
         padding: 2rem;
     }
@@ -280,7 +281,7 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
     }
 
 .tienda__titulo {
-h4{
+h3{
     font-size: 2rem;
 
 
