@@ -30,7 +30,7 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 .contenedorFlex{
     display: flex; 
     flex-direction: column;
-    padding-left: 5rem;
+    padding-left: 2rem;
     
     }
 
@@ -103,8 +103,7 @@ margin-left: auto;
     .section__descripcion{
         background-color: $color-celeste;
         padding-top: 2rem;
-    
-        }
+    }
 
 }
 
@@ -112,8 +111,7 @@ margin-left: auto;
 
 .container__carousel{
         padding-top: 2rem;
-        
-    }
+        }
     
 .img__carousel{
         padding-left: 6.5rem;
@@ -144,7 +142,7 @@ margin-left: auto;
 }
 
 .ruta-de-exploracion{
-    padding-left: 5rem;
+    padding-left: 2rem;
     a{
     transition: color .5s;
     &:hover{
@@ -159,7 +157,7 @@ margin-left: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     padding-top: 2.5rem;
-    padding-left: 5rem;
+    padding-left: 2rem;
     grid-template-areas: 
     "fotoUno"
     "fotoDos"
