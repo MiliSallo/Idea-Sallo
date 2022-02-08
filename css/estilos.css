@@ -308,7 +308,10 @@
   .header__logo {
     padding: 1rem; }
   .contenedorFlex {
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-right: 2rem; }
   .contenedor__imagenes {
     flex-direction: column; }
   .header__navbar a {
@@ -341,6 +344,8 @@
     grid-area: fotoCinco; }
   .cardSeis {
     grid-area: fotoSeis; }
+  .ruta-de-exploracion {
+    padding-left: 4rem; }
   .footer {
     font-size: 1.2rem; }
     .footer h3 {

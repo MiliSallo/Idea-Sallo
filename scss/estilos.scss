@@ -329,6 +329,10 @@ border-color: $color-celeste;
     }
 .contenedorFlex{
     flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-right: 2rem;
+        
 }
 
 .contenedor__imagenes{
@@ -387,6 +391,10 @@ border-color: $color-celeste;
 
 .cardSeis{
     grid-area: fotoSeis;
+}
+
+.ruta-de-exploracion{
+    padding-left: 4rem;
 }
 
 .footer{
