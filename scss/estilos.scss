@@ -13,6 +13,11 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
     text-align: $alineacion;
 }
 
+@mixin propiedadCajas  ($paddingLeft, $paddingRight){
+    padding-left: $paddingLeft;
+    padding-right: $paddingRight;
+    
+}
 /*----------HEADER------------------*/
 .bg-naranja{
     background-color: map-get($colores, colorNaranja )
@@ -25,6 +30,8 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 .contenedorFlex{
     display: flex; 
     flex-direction: column;
+    padding-left: 5rem;
+    
     }
 
     .section__contenido{
@@ -72,6 +79,13 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
     padding-top: 1rem;
     margin-left: 1rem;
 }
+.section__formulario{
+width: 100%;
+@include propiedadCajas(1rem,1rem);
+margin-right: auto;
+margin-bottom: 2rem;   
+margin-left: auto;
+}
 
 .formInput{
     border: 1px solid #ced4da;
@@ -116,6 +130,10 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
         text-align: center;
     }
 
+.slide-icon{
+    color: black
+}
+
     /*-----------------------TIENDA-----------------------*/
 .tienda__titulo{
     @extend .titulo--index;
@@ -125,10 +143,23 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 }
 }
 
+.ruta-de-exploracion{
+    padding-left: 5rem;
+    a{
+    transition: color .5s;
+    &:hover{
+    color: black;
+    }
+}
+}
+    
+
 .contenedor__tienda{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    padding-top: 2.5rem;
+    padding-left: 5rem;
     grid-template-areas: 
     "fotoUno"
     "fotoDos"
@@ -139,29 +170,54 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 
 }
 
-.imgTiendaUno{
+.cardUno{
     grid-area: fotoUno;
 }
 
-.imgTiendaDos{
+.cardDos{
     grid-area:  fotoDos;
 }
 
-.imgTiendaTres{
+.cardTres{
     grid-area: fotoTres;
 }
 
-.imgTiendaCuatro{
+.cardCuatro{
     grid-area: fotoCuatro;
 }
 
-.imgTiendaCinco{
+.cardCinco{
     grid-area: fotoCinco;
 }
 
-.imgTiendaSeis{
+.cardSeis{
     grid-area: fotoSeis;
 }
+
+.btn-tienda{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: $color-celeste;
+    border: 1px solid $color-celeste;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    &:hover{
+color: $color-celeste;
+background-color: white;
+border-color: $color-celeste;
+    }
+    }
 
 /*------------------TURNOS----------------*/
 .turnos__titulo {
@@ -176,7 +232,15 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 }
 
 .contenedorTurnos{
-    margin-bottom: 2rem;
+  width: 100%;
+  @include propiedadCajas(1rem,1rem);
+  margin-right: auto;
+  margin-bottom: 2rem;   
+  margin-left: auto;
+}
+
+.contenedorBtn{
+    @include propiedadCajas(1rem,auto )
 }
 
 .turnosLabel{
@@ -213,6 +277,51 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
         }
 }
 
+/*------------ERROR 404-----------*/
+.contenedor-error{
+    background-color: $color-naranja;
+}
+.contenedor-error{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    .header-titulo--error{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        @include estiloDeFuente(2.5rem, center );
+        color: white;
+    }
+    }
+    .contenedorImgError{
+        width: 50%;
+        height: auto;
+        img{
+            width: 45%;
+            height: auto;
+        }
+    }
+
+    .section-error{
+        h3{
+            @include estiloDeFuente(4rem,justify );
+            padding-left: 2rem;
+    }
+    p{
+        @include estiloDeFuente(1rem,justify );
+        padding-left: 2rem
+    }
+    ul{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: $color-celeste;
+        &:hover{
+    color: black;
+    }   
+        }
+    }
+}
+
 @import "footer";
 
 /*TABLETAS*/
@@ -222,17 +331,65 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
     }
 .contenedorFlex{
     flex-direction: row;
-
 }
 
 .contenedor__imagenes{
-    flex-direction: row;
+    flex-direction: column;
 }
 .header__navbar {
     a {
     font-size: 1.5rem;
     }
     }
+.carousel-captions{
+    display: none;
+}
+
+.contenedorTurnos{
+    @include propiedadCajas(8rem,auto );
+}
+
+.contenedorBtn{
+    @include propiedadCajas(8rem,auto );
+}
+
+.contenedor__tienda{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 2.5rem;
+    padding-left: 4rem;
+    grid-template-areas: 
+    "fotoUno fotoDos"
+    "fotoTres fotoCuatro"
+    "fotoCinco fotoSeis";
+    align-items: start;
+
+}
+
+.cardUno{
+    grid-area: fotoUno;
+}
+
+.cardDos{
+    grid-area:  fotoDos;
+}
+
+.cardTres{
+    grid-area: fotoTres;
+}
+
+.cardCuatro{
+    grid-area: fotoCuatro;
+}
+
+.cardCinco{
+    grid-area: fotoCinco;
+}
+
+.cardSeis{
+    grid-area: fotoSeis;
+}
 
 .footer{
     font-size: 1.2rem;
@@ -244,23 +401,61 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
 }    
 
  
+
+
+.img__carousel{
+    padding-left: 11rem;
+}
+
+.contacto__texto{
+    @include propiedadCajas(18rem,auto );
+    padding-top: 2rem;
+}
+
+.section__formulario{
+    @include propiedadCajas(8rem,auto );
+    padding-top: 2rem;
+}
+
+.contenedor-error{
+.header-titulo--error{
+        font-size: 3rem;
+  }
+}
+.contenedorImgError{
+    width: 50%;
+    height: auto;
+    justify-content: flex-end;
+    img{
+        width: 30%;
+        height: auto;
+    }
+}
+.section-error{
+h3{
+    @include estiloDeFuente(5rem,justify );
+    padding-left: 2rem;
+}
+p{
+@include estiloDeFuente(1.2rem,justify );
+padding-left: 2rem
+}
+}
+
 .contenedorFooter{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 } 
-
-.img__carousel{
-    padding-left: 11rem;
-}
 .footer__redes{
     margin-bottom: 2rem;
 }
 
-
-
 }
 
+
+
+    
 /*DESKTOP*/
 @media(min-width: 1200px){
     .header__logo{
@@ -275,8 +470,11 @@ $colores:( colorNaranja:#fb8500, colorCeleste:  #219ebc)
         padding: 2rem;
     }
 }
-
-    .contenedor__imagenes{
+.contenedorFlex{
+justify-content: space-around;
+    padding-top: 2rem;
+}
+.contenedor__imagenes{
         flex-direction: row;
     }
 
@@ -293,6 +491,8 @@ h3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    padding-top: 2.5rem;
+    padding-left: 8rem;
     grid-template-areas: 
     "fotoUno fotoDos fotoTres"
     "fotoCuatro fotoCinco fotoSeis";
@@ -300,28 +500,32 @@ h3{
 
 }
 
-.imgTiendaUno{
+.cardUno{
     grid-area: fotoUno;
 }
 
-.imgTiendaDos{
+.cardDos{
     grid-area:  fotoDos;
 }
 
-.imgTiendaTres{
+.cardTres{
     grid-area: fotoTres;
 }
 
-.imgTiendaCuatro{
+.cardCuatro{
     grid-area: fotoCuatro;
 }
 
-.imgTiendaCinco{
+.cardCinco{
     grid-area: fotoCinco;
 }
 
-.imgTiendaSeis{
+.cardSeis{
     grid-area: fotoSeis;
+}
+
+.ruta-de-exploracion{
+    padding-left: 8rem;
 }
 
 .turnos__titulo h4{
@@ -329,11 +533,74 @@ h3{
 
 }
 
+.contenedorTurnos{
+    @include propiedadCajas(11rem, auto );
+}
+
+.contenedorBtn{
+    @include propiedadCajas(11rem, auto );
+}
+
+.container__carousel{
+    padding-top: 2rem;
+    
+}
+
 .img__carousel{
     padding-left: 15rem;
 }
     
+.contacto__texto{
+    @include propiedadCajas(36rem,auto );
+    padding-top: 2rem;
+}
 
+.section__formulario{
+    @include propiedadCajas(12rem,auto );
+    padding-top: 2rem;
+}
+
+.contenedor-error{
+    background-color: $color-naranja;
+}
+.contenedor-error{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    .header-titulo--error{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        @include estiloDeFuente(5rem, center );
+        color: white;
+    }
+    }
+    .contenedorImgError{
+        img{
+            width: 15%;
+            height: auto;
+        }
+    }
+
+    .section-error{
+        h3{
+            @include estiloDeFuente(8rem,justify );
+            padding-left: 2rem;
+    }
+    p{
+        @include estiloDeFuente(1.5rem,justify );
+        padding-left: 2rem
+    }
+    ul{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: $color-celeste;
+        &:hover{
+    color: black;
+    }   
+        }
+    }
+}
 
     .footer{
         font-size: 1.5rem;
