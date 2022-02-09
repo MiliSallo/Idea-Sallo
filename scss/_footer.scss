@@ -1,31 +1,27 @@
 /*------------------------FOOTER---------------*/
-.footer{
-    background-color: map-get($colores, colorNaranja ); 
+.footer {
+  background-color: map-get($colores, colorNaranja);
+  color: white;
+  h3 {
     color: white;
-    h3{
-        color: white;
-        font-size: 1rem;
-        padding-bottom: 2rem;
-        margin-left: 1rem;
-        
-        }
-    
-    
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+  }
 }
 
-
-.footer--tamaño{
-font-size: 0.9rem;
+.footer--tamaño {
+  font-size: 0.9rem;
 }
 
-.footer__pie{
-display: none;
+.footer__pie {
+  display: none;
 }
-.nav-links--footer{
-color: white;
-&:hover{
+.nav-links--footer {
+  color: white;
+  &:hover {
     background-color: white;
     color: $color-celeste;
     border-color: white;
-    }
+  }
 }
