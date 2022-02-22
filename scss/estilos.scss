@@ -164,6 +164,7 @@ $colores: (
 
 .cardUno {
   grid-area: fotoUno;
+  border-color: #219ebc;
 }
 
 .cardDos {
@@ -238,7 +239,7 @@ $colores: (
 
 .turnosLabel {
   text-transform: uppercase;
-}
+  }
 
 .contenedorBtn {
   margin-bottom: 2rem;
@@ -285,8 +286,9 @@ $colores: (
   }
 }
 .contenedorImgError {
-  width: 50%;
+  width: 70%;
   height: auto;
+  padding: 0.5rem;
   img {
     width: 45%;
     height: auto;
@@ -294,14 +296,22 @@ $colores: (
 }
 
 .section-error {
+  h1{
+    @include estiloDeFuente(2rem, center);
+    padding-top: 1rem;
+  }
   h3 {
-    @include estiloDeFuente(4rem, justify);
-    padding-left: 2rem;
+    @include estiloDeFuente(4rem, center);
+    }
+  .imgError{
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-left: 3rem;
+    padding-bottom: 0.5rem;
   }
   p {
-    @include estiloDeFuente(1rem, justify);
-    padding-left: 2rem;
-  }
+    @include estiloDeFuente(1rem, center);
+    }
   ul {
     list-style-type: none;
     a {
@@ -427,12 +437,22 @@ $colores: (
     }
   }
   .section-error {
-    h3 {
-      @include estiloDeFuente(5rem, justify);
+    h1{
+      @include estiloDeFuente(2.5rem, center);
       padding-left: 2rem;
     }
+    h3 {
+      @include estiloDeFuente(5rem, center);
+      padding-left: 2rem;
+    }
+    .imgError{
+      width: 80%;
+      padding-top: 0.8rem;
+      padding-left: 8rem;
+      padding-bottom: 0.5rem;
+    }
     p {
-      @include estiloDeFuente(1.2rem, justify);
+      @include estiloDeFuente(1.2rem, center);
       padding-left: 2rem;
     }
   }
@@ -566,12 +586,22 @@ $colores: (
   }
 
   .section-error {
-    h3 {
-      @include estiloDeFuente(8rem, justify);
+    h1{
+      @include estiloDeFuente(4rem, center);
       padding-left: 2rem;
     }
+    h3 {
+      @include estiloDeFuente(8rem, center);
+      padding-left: 2rem;
+    }
+    .imgError{
+      width: 75%;
+      padding-top: 1.2rem;
+      padding-left: 15rem;
+      padding-bottom: 0.5rem;
+    }
     p {
-      @include estiloDeFuente(1.5rem, justify);
+      @include estiloDeFuente(1.5rem, center);
       padding-left: 2rem;
     }
     ul {
