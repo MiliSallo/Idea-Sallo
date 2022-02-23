@@ -284,17 +284,16 @@
   font-size: 1rem;
   text-align: center; }
 
-.section-error ul {
-  list-style-type: none; }
-  .section-error ul a {
-    text-decoration: none;
-    color: #219ebc; }
-    .section-error ul a:hover {
-      color: black; }
-
 .footerError {
   display: flex;
-  justify-content: flex-start; }
+  justify-content: center; }
+  .footerError ul {
+    list-style-type: none; }
+    .footerError ul a {
+      text-decoration: none;
+      color: #219ebc; }
+      .footerError ul a:hover {
+        color: black; }
 
 /*------------------------FOOTER---------------*/
 .footer {
@@ -502,17 +501,17 @@
     font-size: 1.5rem;
     text-align: center;
     padding-left: 2rem; }
-  .section-error ul {
-    list-style-type: none; }
-    .section-error ul a {
-      text-decoration: none;
-      font-size: 1.2rem;
-      color: #219ebc; }
-      .section-error ul a:hover {
-        color: black; }
   .footerError {
     display: flex;
     justify-content: space-around; }
+    .footerError ul {
+      list-style-type: none; }
+      .footerError ul a {
+        text-decoration: none;
+        font-size: 1.3rem;
+        color: #219ebc; }
+        .footerError ul a:hover {
+          color: black; }
   .footer {
     font-size: 1.5rem; }
   .contenedorFooter {
